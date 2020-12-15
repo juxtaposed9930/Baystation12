@@ -187,37 +187,6 @@
 	item_state = "owl"
 	body_parts_covered = HEAD|FACE|EYES
 
-//Vox Unique Masks
-
-/obj/item/clothing/mask/gas/vox
-	name = "vox breathing mask"
-	desc = "A small oxygen filter for use by Vox."
-	icon_state = "respirator"
-	item_state = "respirator"
-	flags_inv = 0
-	body_parts_covered = 0
-	species_restricted = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
-	filtered_gases = list(GAS_OXYGEN)
-
-
-/obj/item/clothing/mask/gas/swat/vox
-	name = "alien mask"
-	desc = "Clearly not designed for a human face."
-	icon_state = "voxswat"
-	item_state = "voxswat"
-	body_parts_covered = EYES
-	species_restricted = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
-	filtered_gases = list(
-		GAS_OXYGEN,
-		GAS_PHORON,
-		GAS_N2O,
-		GAS_CHLORINE,
-		GAS_AMMONIA,
-		GAS_CO,
-		GAS_METHYL_BROMIDE,
-		GAS_METHANE
-		)
-
 /obj/item/clothing/mask/gas/aquabreather
 	name = "aquabreather"
 	desc = "A compact CO2 scrubber and breathing apparatus that draws oxygen from water."

@@ -15,8 +15,7 @@
 	name = "hull"
 	color = COLOR_HULL
 
-/turf/simulated/wall/r_wall/hull/vox
-	initial_gas = list("nitrogen" = 101.38)
+/turf/simulated/wall/r_wall/hull/raider
 	color = COLOR_GREEN_GRAY
 
 /turf/simulated/wall/prepainted
@@ -139,10 +138,10 @@
 /turf/simulated/wall/crystal/New(var/newloc)
 	..(newloc,MATERIAL_CRYSTAL)
 
-/turf/simulated/wall/voxshuttle/New(var/newloc)
-	..(newloc, MATERIAL_VOX)
+/turf/simulated/wall/alloyshuttle/New(var/newloc)
+	..(newloc, MATERIAL_ALIEN_ALLOY)
 
-/turf/simulated/wall/voxshuttle/attackby()
+/turf/simulated/wall/alloyshuttle/attackby()
 	return
 
 /turf/simulated/wall/growth/New(var/newloc)

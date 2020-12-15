@@ -94,7 +94,7 @@ var/list/outfits_decls_by_type_
 		if (S.get_bodytype(H) in G.species_restricted) // what was the problem?
 			if ("exclude" in G.species_restricted) // are they excluded?
 				G.cut_fingertops()
-				// I could optimize this bit when we are trying to apply the gloves to e.g. Vox, a species still restricted despite G.cut_fingertops(). But who cares if this is codebase is like a plate of spaghetti twice over the brim, right? RIGHT?
+				// I could optimize this bit when we are trying to apply the gloves to a species still restricted despite G.cut_fingertops(). But who cares if this is codebase is like a plate of spaghetti twice over the brim, right? RIGHT?
 				H.equip_to_slot_or_del(G,slot_gloves) // try again
 		else
 			qdel(G)

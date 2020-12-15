@@ -194,13 +194,3 @@
 		. = TOPIC_REFRESH
 
 	Interact(usr)
-
-/obj/item/weapon/gun/projectile/dartgun/vox
-	name = "alien dart gun"
-	desc = "A small gas-powered dartgun, fitted for nonhuman hands."
-
-/obj/item/weapon/gun/projectile/dartgun/vox/medical
-	starting_chems = list(/datum/reagent/kelotane,/datum/reagent/bicaridine,/datum/reagent/dylovene)
-
-/obj/item/weapon/gun/projectile/dartgun/vox/raider
-	starting_chems = list(/datum/reagent/space_drugs,/datum/reagent/soporific,/datum/reagent/impedrezene)

@@ -1,14 +1,14 @@
-/*VOX SLUG
+/*SLUG
 Small, little HP, poisonous.
 */
 
-/mob/living/simple_animal/hostile/voxslug
+/mob/living/simple_animal/hostile/slug
 	name = "slug"
 	desc = "A viscious little creature, it has a mouth of too many teeth and a penchant for blood."
-	icon_state = "voxslug"
-	icon_living = "voxslug"
-	item_state = "voxslug"
-	icon_dead = "voxslug_dead"
+	icon_state = "slug"
+	icon_living = "slug"
+	item_state = "slug"
+	icon_dead = "slug_dead"
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "stamps on"
@@ -25,16 +25,12 @@ Small, little HP, poisonous.
 	melee_damage_lower = 5
 	melee_damage_upper = 10
 	melee_damage_flags = DAM_SHARP
-	holder_type = /obj/item/weapon/holder/voxslug
-	faction = SPECIES_VOX
+	holder_type = /obj/item/weapon/holder/slug
+	faction = "angryslugs"
 
-/mob/living/simple_animal/hostile/voxslug/ListTargets(var/dist = 7)
+/mob/living/simple_animal/hostile/slug/ListTargets(var/dist = 7)
 	var/list/L = list()
 	for(var/a in hearers(src, dist))
-		if(istype(a,/mob/living/carbon/human))
-			var/mob/living/carbon/human/H = a
-			if(H.species.get_bodytype() == SPECIES_VOX)
-				continue
 		if(isliving(a))
 			var/mob/living/M = a
 			if(M.faction == faction)
@@ -43,32 +39,29 @@ Small, little HP, poisonous.
 
 	return L
 
-/mob/living/simple_animal/hostile/voxslug/get_scooped(var/mob/living/carbon/grabber)
-	if(grabber.species.get_bodytype() != SPECIES_VOX)
-		to_chat(grabber, "<span class='warning'>\The [src] wriggles out of your hands before you can pick it up!</span>")
-		return
-	else return ..()
+/mob/living/simple_animal/hostile/slug/get_scooped(var/mob/living/carbon/grabber)
+	to_chat(grabber, "<span class='warning'>\The [src] wriggles out of your hands before you can pick it up!</span>")
 
-/mob/living/simple_animal/hostile/voxslug/proc/attach(var/mob/living/carbon/human/H)
+/mob/living/simple_animal/hostile/slug/proc/attach(var/mob/living/carbon/human/H)
 	var/obj/item/clothing/suit/space/S = H.get_covering_equipped_item_by_zone(BP_CHEST)
 	if(istype(S) && !length(S.breaches))
 		S.create_breaches(BRUTE, 20)
 		if(!length(S.breaches)) //unable to make a hole
 			return
 	var/obj/item/organ/external/chest = H.organs_by_name[BP_CHEST]
-	var/obj/item/weapon/holder/voxslug/holder = new(get_turf(src))
+	var/obj/item/weapon/holder/slug/holder = new(get_turf(src))
 	src.forceMove(holder)
 	chest.embed(holder,0,"\The [src] latches itself onto \the [H]!")
 	holder.sync(src)
 
-/mob/living/simple_animal/hostile/voxslug/AttackingTarget()
+/mob/living/simple_animal/hostile/slug/AttackingTarget()
 	. = ..()
 	if(istype(., /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = .
 		if(prob(H.getBruteLoss()/2))
 			attach(H)
 
-/mob/living/simple_animal/hostile/voxslug/Life()
+/mob/living/simple_animal/hostile/slug/Life()
 	. = ..()
 	if(. && istype(src.loc, /obj/item/weapon/holder) && isliving(src.loc.loc)) //We in somebody
 		var/mob/living/L = src.loc.loc
@@ -78,8 +71,8 @@ Small, little HP, poisonous.
 			var/datum/reagents/R = L.reagents
 			R.add_reagent(/datum/reagent/cryptobiolin, 0.5)
 
-/obj/item/weapon/holder/voxslug/attack(var/mob/target, var/mob/user)
-	var/mob/living/simple_animal/hostile/voxslug/V = contents[1]
+/obj/item/weapon/holder/slug/attack(var/mob/target, var/mob/user)
+	var/mob/living/simple_animal/hostile/slug/V = contents[1]
 	if(!V.stat && istype(target, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = target
 		if(!do_after(user, 3 SECONDS, H))

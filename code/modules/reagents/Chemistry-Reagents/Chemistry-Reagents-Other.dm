@@ -405,17 +405,12 @@
 	..()
 	M.add_chemical_effect(CE_SQUEAKY, 1)
 
-// This is only really used to poison vox.
 /datum/reagent/oxygen
 	name = "Oxygen"
 	description = "An ubiquitous oxidizing agent."
 	taste_description = "nothing"
 	reagent_state = LIQUID
 	color = COLOR_GRAY80
-
-/datum/reagent/oxygen/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
-	if(alien == IS_VOX)
-		M.adjustToxLoss(removed * 6)
 
 /datum/reagent/carbon_monoxide
 	name = "Carbon Monoxide"

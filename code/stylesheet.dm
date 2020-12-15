@@ -63,7 +63,6 @@ em						{font-style: normal;font-weight: bold;}
 
 .hailradio				{color: #cc00aa;}
 .exampleradio			{color: #ff00ff;}
-.voxradio				{color: #f32b06;}
 .bearcatradio			{color: #590e2d;}
 .colonyradio			{color: #ceaf3e;}
 .verneradio				{color: #738465;}
@@ -111,7 +110,6 @@ h1.alert, h2.alert		{color: #000080;}
 .yeosa					{color: #218b89;}
 .nabber_lang			{color: #525252;}
 .changeling				{color: #800080;}
-.vox					{color: #aa00aa;}
 .rough					{font-family: "Trebuchet MS", cursive, sans-serif;}
 .say_quote				{font-family: Georgia, Verdana, sans-serif;}
 .adherent				{color: #526c7a;}

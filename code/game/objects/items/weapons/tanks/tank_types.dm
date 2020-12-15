@@ -120,13 +120,6 @@
 	icon_state = "oxygen_fr"
 	slot_flags = SLOT_BELT | SLOT_BACK
 
-/obj/item/weapon/tank/emergency/nitrogen
-	name = "emergency nitrogen tank"
-	desc = "An emergency air tank hastily painted red and issued to Vox crewmembers."
-	icon_state = "emergency_nitro"
-	gauge_icon = "indicator_emergency"
-	starting_pressure = list(GAS_NITROGEN = 10*ONE_ATMOSPHERE)
-
 /obj/item/weapon/tank/emergency/nitrogen/double
 	name = "double emergency nitrogen tank"
 	icon_state = "emergency_double_nitrogen"

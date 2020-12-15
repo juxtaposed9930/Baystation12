@@ -89,17 +89,6 @@
 					/obj/item/weapon/reagent_containers/food/snacks/proteinbar = 1,
 					/obj/item/device/oxycandle = 1)
 
-/obj/item/weapon/storage/box/vox/
-	name = "vox survival kit"
-	desc = "A box decorated in warning colors that contains a limited supply of survival tools. The panel and black stripe indicate this one contains nitrogen."
-	icon_state = "survivalvox"
-	startswith = list(/obj/item/clothing/mask/breath = 1,
-					/obj/item/weapon/tank/emergency/nitrogen = 1,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline = 1,
-					/obj/item/stack/medical/bruise_pack = 1,
-					/obj/item/device/flashlight/flare/glowstick = 1,
-					/obj/item/weapon/reagent_containers/food/snacks/proteinbar = 1)
-
 /obj/item/weapon/storage/box/engineer/
 	name = "engineer survival kit"
 	desc = "A box decorated in warning colors that contains a limited supply of survival tools. The panel and orange stripe indicate this one as the engineering variant."

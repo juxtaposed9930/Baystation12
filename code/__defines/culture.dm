@@ -118,21 +118,6 @@
 #define FACTION_ADHERENT_LOYALISTS   "Loyalists"
 #define FACTION_ADHERENT_SEPARATISTS "Seperatists"
 
-// Vox cultures.
-#define CULTURE_VOX_ARKSHIP    "Arkship Crew"
-#define CULTURE_VOX_SALVAGER   "Salvager Crew"
-#define CULTURE_VOX_RAIDER     "Raider Crew"
-
-#define HOME_SYSTEM_VOX_ARK    "Ark-Dweller"
-#define HOME_SYSTEM_VOX_SHROUD "Shroud-Dweller"
-#define HOME_SYSTEM_VOX_SHIP   "Ship-Dweller"
-
-#define FACTION_VOX_RAIDER     "Raider"
-#define FACTION_VOX_CREW       "Ark Labourer"
-#define FACTION_VOX_APEX       "Apex Servant"
-
-#define RELIGION_VOX           "Auralis Reverence"
-
 // IPC cultures.
 #define CULTURE_POSITRONICS    "Union Member"
 

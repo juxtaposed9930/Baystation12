@@ -109,7 +109,7 @@
 
 /obj/item/organ/internal/acetone
 	name = "acetone reactor"
-	icon_state = "vox lung"
+	icon_state = "alien_lung"
 	color = "#ff6699"
 	organ_tag = BP_ACETONE
 	parent_organ = BP_GROIN

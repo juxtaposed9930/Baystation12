@@ -10888,7 +10888,6 @@
 "aVS" = (
 /obj/structure/closet,
 /obj/item/clothing/shoes/laceup,
-/obj/item/clothing/under/vox/vox_casual,
 /turf/simulated/floor/plating,
 /area/merchant_station)
 "aWf" = (

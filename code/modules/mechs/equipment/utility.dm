@@ -453,7 +453,7 @@
 
 	var/delay = 3 SECONDS //most things
 	switch (drill_head.material.brute_armor)
-		if (15 to INFINITY) delay = 0.5 SECONDS //voxalloy on a good roll
+		if (15 to INFINITY) delay = 0.5 SECONDS //alienalloy on a good roll
 		if (10 to 15) delay = 1 SECOND //titanium, diamond
 		if (5 to 10) delay = 2 SECONDS //plasteel, steel
 	owner.setClickCooldown(delay)

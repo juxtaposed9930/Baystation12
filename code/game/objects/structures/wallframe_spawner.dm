@@ -112,9 +112,9 @@
 	name = "reinforced hull wall frame window spawner"
 	frame_path = /obj/structure/wall_frame/hull
 
-/obj/effect/wallframe_spawn/reinforced/hull/vox
-	name = "reinforced vox hull wall frame window spawner"
-	frame_path = /obj/structure/wall_frame/hull/vox
+/obj/effect/wallframe_spawn/reinforced/hull/raider
+	name = "reinforced raider hull wall frame window spawner"
+	frame_path = /obj/structure/wall_frame/hull/raider
 
 /obj/effect/wallframe_spawn/reinforced/hull/verne
 	name = "reinforced verne hull wall frame window spawner"

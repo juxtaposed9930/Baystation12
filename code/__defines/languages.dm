@@ -19,7 +19,6 @@
 #define LANGUAGE_ROOTLOCAL         "Local Rootspeak"
 #define LANGUAGE_ROOTGLOBAL        "Global Rootspeak"
 #define LANGUAGE_ADHERENT          "Protocol"
-#define LANGUAGE_VOX               "Vox-pidgin"
 #define LANGUAGE_NABBER            "Serpentid"
 
 //Antag

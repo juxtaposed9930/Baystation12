@@ -334,7 +334,7 @@
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/third
 	name = "third fleet beret"
-	desc = "An SCG Fleet beret carrying insignia of Third Fleet, the Border Guard, guarding borders of Sol territory against Vox and pirates. For personnel that are more inclined towards style than safety."
+	desc = "An SCG Fleet beret carrying insignia of Third Fleet, the Border Guard, guarding borders of Sol territory against raiders and pirates. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_third"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/fourth

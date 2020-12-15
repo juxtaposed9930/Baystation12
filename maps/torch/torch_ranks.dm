@@ -27,14 +27,7 @@
 
 	species_to_branch_blacklist = list(
 		/datum/species/human   = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
-		/datum/species/machine = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
-		/datum/species/vox     = list(
-			/datum/mil_branch/expeditionary_corps,
-			/datum/mil_branch/fleet,
-			/datum/mil_branch/civilian,
-			/datum/mil_branch/solgov,
-			/datum/mil_branch/skrell_fleet
-		)
+		/datum/species/machine = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet)
 	)
 
 	species_to_branch_whitelist = list(
@@ -43,8 +36,7 @@
 		/datum/species/skrell       = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/skrell_fleet),
 		/datum/species/unathi       = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/unathi/yeosa = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/adherent     = list(/datum/mil_branch/civilian),
-		/datum/species/vox          = list(/datum/mil_branch/alien)
+		/datum/species/adherent     = list(/datum/mil_branch/civilian)
 	)
 
 	species_to_rank_blacklist = list(
@@ -92,11 +84,6 @@
 			/datum/mil_branch/expeditionary_corps = list(
 				/datum/mil_rank/ec/e3,
 				/datum/mil_rank/ec/e5
-			)
-		),
-		/datum/species/vox = list(
-			/datum/mil_branch/alien = list(
-				/datum/mil_rank/alien
 			)
 		)
 	)
@@ -787,7 +774,7 @@
 	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/flag/o10)
 	sort_order = 20
 
-// Vox/foreign alien branch.
+// Foreign alien branch.
 /datum/mil_branch/alien
 	name = "Alien"
 	name_short = "Alien"

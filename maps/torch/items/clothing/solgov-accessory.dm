@@ -121,7 +121,7 @@ patches
 
 /obj/item/clothing/accessory/solgov/fleet_patch/third
 	name = "\improper Third Fleet patch"
-	desc = "A scuffed shoulder patch carrying insignia of Third Fleet, the Border Guard, guarding borders of Sol territory against Vox and pirates."
+	desc = "A scuffed shoulder patch carrying insignia of Third Fleet, the Border Guard, guarding borders of Sol territory against raiders and pirates."
 	icon_state = "fleetpatch3"
 
 /obj/item/clothing/accessory/solgov/fleet_patch/fourth

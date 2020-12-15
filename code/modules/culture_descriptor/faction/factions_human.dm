@@ -15,7 +15,7 @@
 /decl/cultural_info/faction/scg/fleet
 	name = FACTION_FLEET
 	description = "The Fleet is the primary component of the SCG Defence Forces. It mostly protects SCG space from pirates, smugglers, \
-	and occasional vox raiders, with its last serious military engagement being the Gaia war over 10 years ago. \
+	and occasional raiders, with its last serious military engagement being the Gaia war over 10 years ago. \
 	The oldest component of the Defence Forces, the Fleet considers itself the pinnacle of Human military accomplishment. \
 	It is well funded, but seen as complacent and bloated. It is made up of five Fleets, with missions ranging from \
 	diplomatic security for Sol dignitaries, to border patrol along the vast frontier and quick reaction force duties. \

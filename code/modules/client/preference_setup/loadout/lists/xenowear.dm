@@ -161,13 +161,6 @@
 	sort_category = "Xenowear"
 	whitelisted = list(SPECIES_UNATHI, SPECIES_YEOSA)
 
-// Vox clothing
-/datum/gear/mask/gas/vox
-	display_name = "vox breathing mask"
-	path = /obj/item/clothing/mask/gas/vox
-	sort_category = "Xenowear"
-	whitelisted = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
-
 // Space-Adapted Human clothing
 /datum/gear/accessory/space_adapted
 	sort_category = "Xenowear"

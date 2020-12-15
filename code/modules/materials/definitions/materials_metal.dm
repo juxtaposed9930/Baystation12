@@ -326,8 +326,8 @@
 	value = 5
 
 // Adminspawn only, do not let anyone get this.
-/material/voxalloy
-	name = MATERIAL_VOX
+/material/alienalloy
+	name = MATERIAL_ALIEN_ALLOY
 	display_name = "durable alloy"
 	wall_name = "bulkhead"
 	stack_type = null
@@ -342,7 +342,7 @@
 	value = 100
 
 // Likewise.
-/material/voxalloy/elevatorium
+/material/alienalloy/elevatorium
 	name = MATERIAL_ELEVATORIUM
 	display_name = "elevator panelling"
 	wall_name = "bulkhead"
