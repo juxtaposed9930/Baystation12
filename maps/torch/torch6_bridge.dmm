@@ -1205,7 +1205,6 @@
 "cs" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/item/device/radio/beacon,
 /obj/machinery/alarm{
 	dir = 1;
 	pixel_y = -28;
@@ -3341,7 +3340,6 @@
 	dir = 4;
 	pixel_x = -21
 	},
-/obj/prefab/hand_teleporter,
 /obj/item/toy/torchmodel,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
@@ -5157,7 +5155,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/item/device/radio/beacon,
 /obj/structure/disposalpipe/sortjunction{
 	dir = 4;
 	icon_state = "pipe-j1s";
@@ -7095,7 +7092,6 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
 	},
-/obj/item/device/radio/beacon,
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 8;
@@ -12974,9 +12970,6 @@
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/effect/floor_decal/corner/lime{
 	dir = 5
-	},
-/obj/item/device/radio/beacon/anchored{
-	level = 1
 	},
 /obj/structure/cable/cyan{
 	d1 = 1;

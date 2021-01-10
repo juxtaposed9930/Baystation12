@@ -80,10 +80,6 @@
 	name = "Fourth Deck Port Maintenance"
 	icon_state = "pmaint"
 
-/area/teleporter/fourthdeck
-	name = "\improper Fourth Deck Teleporter"
-	icon_state = "teleporter"
-
 /area/maintenance/substation/fourthdeck
 	name = "Fourth Deck Substation"
 
@@ -128,9 +124,8 @@
 	name = "Third Deck Aft Port Maintenance"
 	icon_state = "apmaint"
 
-/area/teleporter/thirddeck
-	name = "\improper Third Deck Teleporter"
-	icon_state = "teleporter"
+/area/crew_quarters/emptyoffice
+	name = "\improper Empty Office"
 
 /area/maintenance/substation/thirddeck
 	name = "Third Deck Substation"
@@ -185,10 +180,6 @@
 	name = "Second Deck Fore Hallway"
 	icon_state = "hallF2"
 
-/area/teleporter/seconddeck
-	name = "\improper Second Deck Teleporter"
-	icon_state = "teleporter"
-
 /area/maintenance/substation/seconddeck
 	name = "Second Deck Substation"
 
@@ -221,13 +212,13 @@
 	name = "First Deck Port Maintenance"
 	icon_state = "pmaint"
 
-/area/teleporter/firstdeck
-	name = "\improper First Deck Teleporter"
-	icon_state = "teleporter"
-
 /area/hallway/primary/firstdeck/fore
 	name = "\improper First Deck Fore Hallway"
 	icon_state = "hallF"
+
+/area/hallway/primary/firstdeck/storage
+	name = "\improper First Deck Fore Storage"
+	icon_state = "crew-quarters"
 
 /area/hallway/primary/firstdeck/center
 	name = "\improper First Deck Central Hallway"
@@ -964,6 +955,10 @@
 	name = "\improper Lounge"
 	icon_state = "crew_quarters"
 	sound_env = MEDIUM_SOFTFLOOR
+
+/area/crew_quarters/visitor
+	name = "\improper Visitor's Lounge"
+	icon_state = "crew_quarters"
 
 /area/crew_quarters/safe_room
 	name = "\improper Safe Room"

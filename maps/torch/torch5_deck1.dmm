@@ -2281,14 +2281,12 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "ael" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 9;
-	icon_state = "corner_white"
+/obj/effect/floor_decal/techfloor{
+	dir = 1;
+	icon_state = "techfloor_edges"
 	},
-/obj/structure/disposalpipe/segment,
-/obj/item/device/radio/beacon,
-/turf/simulated/floor/tiled/white,
-/area/medical/medicalhallway)
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/firstdeck/storage)
 "aem" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -7009,15 +7007,9 @@
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "atw" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 4;
-	icon_state = "techfloor_edges"
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/teleporter/firstdeck)
+/obj/structure/closet/radiation,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/hallway/primary/firstdeck/storage)
 "atA" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/machinery/alarm{
@@ -7220,8 +7212,12 @@
 	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
-/area/teleporter/firstdeck)
+/obj/effect/floor_decal/techfloor{
+	dir = 8;
+	icon_state = "techfloor_edges"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/firstdeck/storage)
 "auE" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -7235,12 +7231,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
 /obj/machinery/camera/network/first_deck{
 	c_tag = "First Deck - Stairs";
 	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
@@ -7254,12 +7251,11 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+	dir = 6
 	},
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/structure/disposalpipe/segment{
-	dir = 4;
-	icon_state = "pipe-c"
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
@@ -7530,16 +7526,13 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
 "avS" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
-	},
 /obj/machinery/light,
 /obj/item/device/radio/intercom{
 	dir = 4;
 	pixel_x = -21
 	},
-/obj/structure/closet/emcloset,
-/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/disposal,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
 "avT" = (
@@ -7549,11 +7542,16 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/disposal,
 /obj/structure/sign/deck/first{
 	dir = 1;
 	pixel_y = -32
+	},
+/obj/machinery/vending/fitness{
+	dir = 1;
+	icon_state = "fitness"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
@@ -7971,7 +7969,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/item/device/radio/beacon,
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
@@ -8072,7 +8069,6 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/item/device/radio/beacon,
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/center)
@@ -8139,7 +8135,6 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/obj/item/device/radio/beacon,
 /obj/structure/disposalpipe/junction{
 	dir = 4;
 	icon_state = "pipe-j1"
@@ -8348,7 +8343,6 @@
 /area/hallway/primary/firstdeck/aft)
 "ayH" = (
 /obj/structure/disposalpipe/segment,
-/obj/item/device/radio/beacon,
 /obj/machinery/hologram/holopad,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
@@ -8660,7 +8654,7 @@
 /area/rnd/development)
 "aAT" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/teleporter/firstdeck)
+/area/hallway/primary/firstdeck/storage)
 "aAU" = (
 /obj/item/device/radio/intercom{
 	dir = 4;
@@ -9049,10 +9043,10 @@
 /turf/simulated/wall/prepainted,
 /area/rnd/development)
 "aCp" = (
-/obj/machinery/teleport/hub,
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/teleporter/firstdeck)
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/portable_atmospherics/powered/scrubber,
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/firstdeck/storage)
 "aCq" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -10815,7 +10809,6 @@
 /turf/simulated/wall/prepainted,
 /area/security/brig)
 "aKJ" = (
-/obj/item/device/radio/beacon,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
@@ -10828,8 +10821,8 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/teleporter/firstdeck)
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/firstdeck/storage)
 "aKL" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -14902,13 +14895,12 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1starboard)
 "brb" = (
-/obj/structure/closet/crate,
-/obj/random/tank,
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/teleporter/firstdeck)
+/obj/structure/closet/emcloset,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/hallway/primary/firstdeck/storage)
 "brj" = (
 /obj/effect/catwalk_plated,
 /obj/structure/disposalpipe/segment,
@@ -17618,12 +17610,10 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/foyer)
 "eZQ" = (
-/obj/machinery/lapvend{
-	dir = 4;
-	icon_state = "laptop"
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/teleporter/firstdeck)
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/portable_atmospherics/powered/pump/filled,
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/firstdeck/storage)
 "fbQ" = (
 /obj/machinery/door/airlock/glass/civilian{
 	autoset_access = 0;
@@ -18006,12 +17996,8 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -32
 	},
-/obj/machinery/vending/fitness{
-	dir = 4;
-	icon_state = "fitness"
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/teleporter/firstdeck)
+/turf/simulated/wall/r_wall/prepainted,
+/area/hallway/primary/firstdeck/storage)
 "fVC" = (
 /obj/effect/catwalk_plated,
 /obj/structure/disposalpipe/segment,
@@ -18409,17 +18395,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
-"gDm" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 4;
-	icon_state = "techfloor_edges"
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4
-	},
-/obj/machinery/bluespace_beacon,
-/turf/simulated/floor/tiled/dark,
-/area/teleporter/firstdeck)
 "gEb" = (
 /obj/effect/wallframe_spawn/reinforced/polarized/no_grille/regular{
 	id = "exam_windows"
@@ -18695,7 +18670,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/item/device/radio/beacon,
 /obj/structure/disposalpipe/junction{
 	dir = 4;
 	icon_state = "pipe-j1"
@@ -19726,8 +19700,8 @@
 /turf/simulated/wall/prepainted,
 /area/engineering/auxpower)
 "iui" = (
-/obj/machinery/door/airlock/command{
-	name = "First Deck Teleporter"
+/obj/machinery/door/airlock/civilian{
+	name = "Emergency Storage"
 	},
 /obj/structure/cable/green{
 	d1 = 1;
@@ -19737,7 +19711,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/teleporter/firstdeck)
+/area/hallway/primary/firstdeck/storage)
 "iuB" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled,
@@ -22575,12 +22549,9 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "lYS" = (
-/obj/machinery/computer/teleporter{
-	dir = 8;
-	icon_state = "computer"
-	},
+/obj/structure/closet/firecloset,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/teleporter/firstdeck)
+/area/hallway/primary/firstdeck/storage)
 "mav" = (
 /turf/simulated/wall/prepainted,
 /area/rnd/office)
@@ -22791,8 +22762,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/teleporter/firstdeck)
+/obj/effect/floor_decal/techfloor{
+	dir = 8;
+	icon_state = "techfloor_edges"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/firstdeck/storage)
 "mlX" = (
 /obj/machinery/computer/modular/preset/civilian,
 /obj/effect/floor_decal/corner/research/mono,
@@ -23416,8 +23391,9 @@
 /area/security/nuke_storage)
 "mXb" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled/dark,
-/area/teleporter/firstdeck)
+/obj/structure/closet/emcloset,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/hallway/primary/firstdeck/storage)
 "nbb" = (
 /obj/structure/cable/green{
 	d2 = 2;
@@ -23486,25 +23462,20 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/nuke_storage)
 "ngb" = (
-/obj/structure/table/rack,
-/obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Teleporter";
-	dir = 4
-	},
-/obj/random/tech_supply,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/teleporter/firstdeck)
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/hallway/primary/firstdeck/storage)
 "nhb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
-/area/teleporter/firstdeck)
+/obj/effect/floor_decal/techfloor{
+	dir = 9;
+	icon_state = "techfloor_edges"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/firstdeck/storage)
 "nib" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 8
-	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
 "njb" = (
@@ -23686,13 +23657,13 @@
 /turf/simulated/floor/blackgrid,
 /area/security/nuke_storage)
 "npb" = (
-/obj/structure/table/standard,
 /obj/item/device/radio/intercom{
 	dir = 4;
 	pixel_x = -21
 	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/teleporter/firstdeck)
+/obj/structure/closet/crate/internals,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/hallway/primary/firstdeck/storage)
 "npe" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -23711,11 +23682,13 @@
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "nqb" = (
-/obj/machinery/hologram/holopad,
-/obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/teleporter/firstdeck)
+/obj/effect/floor_decal/techfloor{
+	dir = 8;
+	icon_state = "techfloor_edges"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/firstdeck/storage)
 "nrF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -23740,13 +23713,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 8
-	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/fore)
 "nub" = (
-/obj/structure/table/standard,
 /obj/machinery/power/apc{
 	dir = 8;
 	name = "west bump";
@@ -23756,18 +23725,14 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/teleporter/firstdeck)
+/obj/structure/closet/crate,
+/obj/random/firstaid,
+/obj/random/firstaid,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/hallway/primary/firstdeck/storage)
 "nvb" = (
-/obj/effect/floor_decal/corner_techfloor_grid{
-	dir = 4;
-	icon_state = "corner_techfloor_grid"
-	},
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/teleporter/firstdeck)
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/firstdeck/storage)
 "nvs" = (
 /obj/structure/table/steel,
 /obj/structure/disposalpipe/segment{
@@ -23797,9 +23762,6 @@
 /area/turbolift/robotics_lift)
 "nyb" = (
 /obj/effect/catwalk_plated,
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
@@ -23916,7 +23878,6 @@
 /turf/simulated/floor/plating,
 /area/security/wing)
 "nEb" = (
-/obj/structure/table/standard,
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_x = 0;
@@ -23925,8 +23886,9 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/teleporter/firstdeck)
+/obj/structure/closet/crate/freezer/rations,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/hallway/primary/firstdeck/storage)
 "nFh" = (
 /obj/structure/table/steel,
 /obj/machinery/photocopier/faxmachine/torch{
@@ -24248,15 +24210,18 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)
 "nZB" = (
-/obj/machinery/teleport/station,
 /obj/machinery/button/blast_door{
 	id_tag = "teleport1";
 	name = "First Deck Teleporter Access Shutter Control";
 	pixel_x = 24;
 	pixel_y = 6
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/teleporter/firstdeck)
+/obj/effect/floor_decal/techfloor{
+	dir = 1;
+	icon_state = "techfloor_edges"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/firstdeck/storage)
 "nZR" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 9;
@@ -26480,7 +26445,7 @@
 "qHx" = (
 /obj/structure/sign/warning/secure_area,
 /turf/simulated/wall/r_wall/prepainted,
-/area/teleporter/firstdeck)
+/area/hallway/primary/firstdeck/storage)
 "qIb" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue,
 /turf/simulated/floor/tiled/white,
@@ -29930,15 +29895,6 @@
 "uXe" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)
-"uXr" = (
-/obj/machinery/door/blast/shutters{
-	dir = 4;
-	id_tag = "teleport1";
-	name = "First Deck Teleporter Access Shutters"
-	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/teleporter/firstdeck)
 "uXJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -30675,7 +30631,7 @@
 	icon_state = "securearea"
 	},
 /turf/simulated/wall/r_wall/prepainted,
-/area/teleporter/firstdeck)
+/area/hallway/primary/firstdeck/storage)
 "wWr" = (
 /obj/effect/floor_decal/corner/green/half{
 	dir = 1;
@@ -44183,8 +44139,8 @@ auG
 avU
 aAT
 atw
-atw
-gDm
+ael
+nvb
 nvb
 aKK
 qHx
@@ -44387,8 +44343,8 @@ aAT
 lYS
 nZB
 aCp
-aAT
-aAT
+eZQ
+eZQ
 aAT
 iAZ
 aGf
@@ -44588,9 +44544,9 @@ avV
 aAT
 wWc
 aAT
-uXr
 aAT
-eZQ
+aAT
+aAT
 fVw
 obZ
 aFV
@@ -53065,7 +53021,7 @@ aem
 afg
 agh
 hEU
-ael
+oxb
 oxb
 oxb
 pzZ

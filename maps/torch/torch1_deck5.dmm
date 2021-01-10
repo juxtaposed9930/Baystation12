@@ -1561,9 +1561,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "cU" = (
-/obj/item/device/radio/beacon/anchored{
-	level = 1
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
@@ -1758,9 +1755,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/exploration_shuttle/airlock)
 "dk" = (
-/obj/item/device/radio/beacon/anchored{
-	level = 1
-	},
 /turf/simulated/floor/tiled,
 /area/exploration_shuttle/airlock)
 "dl" = (
@@ -5643,7 +5637,6 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/obj/item/device/radio/beacon,
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
 "mF" = (
@@ -8406,7 +8399,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/item/device/radio/beacon,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fifthdeck/fore)
 "rP" = (
@@ -9448,7 +9440,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/item/device/radio/beacon,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fifthdeck/aft)
 "uo" = (
@@ -12803,9 +12794,6 @@
 "Gm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
-	},
-/obj/item/device/radio/beacon/anchored{
-	level = 1
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
