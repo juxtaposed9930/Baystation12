@@ -340,8 +340,8 @@
 	title = "Senior Enlisted Advisor"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Commanding Officer and the Executive Officer"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 14
